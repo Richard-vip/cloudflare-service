@@ -5,6 +5,12 @@ account_id = ""
 route = ""
 workers_dev = true
 compatibility_date = "2022-04-08"
+kv_namespaces = [
+	 { binding = "KV", id = "89de03e6e27c478194e33f86bec38da1" ,preview_id = "1a4e5275a1c04f65a116c56f9ddd674a"}
+]
+
+[triggers]
+crons = ['* * * * *']
 
 [build]
 command = "npm install && npm run build"

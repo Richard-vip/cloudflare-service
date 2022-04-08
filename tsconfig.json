@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    // "noEmit": true,
+    "baseUrl": "./",
     "outDir": "./dist",
     "module": "commonjs",
     "target": "esnext",
@@ -16,6 +18,6 @@
       "@types/service-worker-mock"
     ]
   },
-  "include": ["src"],
+  "include": ["src","./typings/**/*.d.ts"],
   "exclude": ["node_modules", "dist", "test"]
 }
